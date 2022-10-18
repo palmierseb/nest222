@@ -1,0 +1,42 @@
+### Create a new user
+POST http://localhost:8000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "dawud@test.com",
+  "password": "azertyuiop"
+}
+
+### Find a user by id 
+GET http://localhost:8000/auth/1
+Content-Type: application/json
+
+### Find a user by email
+GET http://localhost:8000/auth/all/dawud@test.fr
+Content-Type: application/json
+
+### FindAll users
+
+GET  http://localhost:8000/auth
+Content-Type: application/json
+
+### Update a user
+PATCH http://localhost:8000/auth/1
+Content-Type: application/json
+
+{
+  "email": "dawud@test.com"
+}
+
+### Delete a user
+DELETE http://localhost:8000/auth/1
+Content-Type: application/json
+
+
+### get report 
+GET http://localhost:8000/auth/profile
+Content-Type: application/json
+
+### signout
+POST  http://localhost:8000/auth/signout
+Content-Type: application/json
